@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Social Network Analysis",
+    "date": "Developed Fall 2023",
+    "description": "Created for a case study that analyzed the members of the Lackawanna Six",
+    "mediaLink": "resources/images/SNA.png",
+    "width": "300px"
+  },
+  {
+    "title": "Book Store Database",
+    "date": "Developed Fall 2023",
+    "description": "Created for a theoretical book company that wanted to store it's user data, promotions, and book details in a database",
+    "mediaLink": "resources/images/LibSQL.png",
+    "width": "300px"
+  }
+]

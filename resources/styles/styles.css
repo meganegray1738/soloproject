@@ -1,0 +1,92 @@
+body {
+    background-color: cornflowerblue;
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 20px;
+    width: 250px;
+}
+
+.headshot {
+    padding: 15px;
+    width: 200px;
+    object-position: center;
+}
+
+.nav-pills{
+    background-color: navy;
+}
+header nav {
+    margin-right: 20px;
+    color: navy;
+}
+header nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .sidebar {
+    margin: 70px;
+}
+
+.content .sidebar {
+    list-style-type: none;
+    margin: 20px;
+}
+
+.content .sidebar {
+    padding: 30px 70px;
+    max-width: 500px;
+    background-color: navy;
+    color: white;
+}
+
+.content .displayContent {
+    width: 75%;
+    padding: 35px;
+}
+
+.Intro {
+    color: navy;
+    font-family: "Arial Rounded MT Bold";
+}
+
+.CyberInfo {
+}
+
+.Education{
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fgopsusports.com%2Fsports%2F2020%2F4%2F13%2Fvirtual-tailgate.aspx&psig=AOvVaw3C4qlbOCWlMVIrypgNPDom&ust=1709148107438000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMC6ooCfzIQDFQAAAAAdAAAAABAE");
+}
+
+table td {
+    padding: 25px;
+}
+
+table tr {
+    margin-bottom: 15px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 500px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    margin: 20px;
+}

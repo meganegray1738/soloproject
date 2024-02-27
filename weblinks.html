@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Megan Gray</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/resources/styles/styles.css">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="/resources/images/up.png" alt="logo" class="logo">
+    </a>
+
+    <nav>
+        <ul class="nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="education.html"> Education</a></li>
+            <li class="nav-item"><a class="nav-link active" href="experience.html"> Experience</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html"> Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="resume.html"> Resume</a></li>
+            <li class="nav-item"><a class="nav-link active" href="weblinks.html"> Links</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+
+<div class="content">
+    <div class="sidebar">
+        <br>
+
+        <h2>Contact me</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkgbbzr" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="sample@email.com" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+
+        <div id="apiDisplay"></div>
+
+        <script>
+            const div = document.getElementById('apiDisplay');
+            const url = 'https://icanhazdadjoke.com/';
+
+            const headers = new Headers({
+                'Accept': 'application/json'
+            });
+
+            fetch(url, {headers})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    let p = document.createElement('p');
+                    p.innerHTML = `${data.joke}`
+                    div.appendChild(p);
+                })
+                .catch(function(error){
+                    console.log(error);
+                });
+        </script>
+
+    </div>
+
+    <div class="displayContent">
+        <h1>Weblinks</h1>
+        <br>
+        <h3>
+        <a href="https://www.linkedin.com/in/megan-gray-317629254/">LinkedIn</a>
+            <br>
+            <br>
+        <a href="https://github.com/meganegray1738">GitHub</a>
+            <br>
+            <br>
+        <a href="resources/documents/resume.pdf" target="_blank">Resume</a>
+            <br>
+            <br>
+        <a href="https://standards.ieee.org/">IEEE Standards</a>
+        </h3>
+        <h5>
+            This link will lead you to the IEEE Standards Association website. I enjoy frequenting this website
+            to learn more about the advancement of AI in technology, security, and business. But, primarily
+            I go on this website to keep up to date with what new projects are currently happening with impact on
+            cybersecurity. To narrow down my searches, I like to go onto the focuses tab and look at featured topics.
+            This is where you can uncover realms of autonomous and intelligent systems, connectivity and telecom,
+            energy, healthcare and life systems, and government engagement. This website grants you with a wide range
+            of information. But, the government engagement and autonomous and intelligent systems tabs are most relevant
+            to my cybersecurity inquiries.
+        </h5>
+        <br>
+        <br>
+        <h6>
+            Megan Gray <br>
+            24 Redifer Commons, University Park, PA 16802 <br>
+            (484) 798-7365 <br>
+            meganegray17@gmail.com <br>
+        </h6>
+        <br>
+
+    </div>
+</div>
+
+<footer>
+    <p> Megan Gray <br> 24 Redifer Commons, University Park, PA 16802 <br> (484) 798-7365 <br> meganegray17@gmail.com <br></p>
+    <p>&copy; Copyright 2024</p>
+</footer>
+</body>
+</html>
